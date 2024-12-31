@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonne Année 2025!</title>
+    <link rel="icon" type="image/svg+xml" href="logo_white.svg">
+    
+    <!-- Open Graph Meta Tags for LinkedIn -->
+    <meta property="og:title" content="Bonne Année 2025!">
+    <meta property="og:description" content="Que 2025 vous apporte joie, santé et réussite.">
+    <meta property="og:image" content="logo_white.svg">
+    
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bonne Année 2025!">
+    <meta name="twitter:description" content="Que 2025 vous apporte joie, santé et réussite.">
+    <meta name="twitter:image" content="logo_white.svg">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'custom-purple': '#783DFF',
+                        'custom-purple-light': '#9665FF',
+                        'custom-purple-dark': '#6032CC',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-br from-custom-purple-light via-custom-purple to-custom-purple-dark min-h-screen flex items-center justify-center font-sans">
+    <div class="text-center">
+        <div class="absolute top-4 right-4 flex items-center gap-4">
+            <a href="https://github.com/yourusername/your-repo" target="_blank" class="text-white hover:text-gray-300 transition-colors">
+                <i class="fab fa-github text-2xl"></i>
+            </a>
+            <div id="theme-toggle" class="theme-switch">
+                <div class="icons">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </div>
+            </div>
+        </div>
+        <h1 class="text-6xl md:text-8xl font-bold mb-8 text-white">
+            <span class="year-container" id="year-number"><span>202</span><span class="number-container" style="width: 1em;"><span id="number4" class="inline-block">4</span><span id="number5" class="hidden text-yellow-400">5</span></span></span>
+        </h1>
+        <div id="message" class="hidden">
+            <p class="text-3xl md:text-5xl text-white font-bold fade-in delayed-fade">
+                Bonne Année !
+            </p>
+            <p class="text-xl md:text-2xl text-gray-300 mt-4 font-normal fade-in delayed-fade">
+                Que 2025 vous apporte joie, santé et réussite
+            </p>
+            <div class="mt-8 space-y-2 fade-in delayed-fade">
+                <div class="flex justify-center space-x-2">
+                    <span class="animate-ping inline-block h-3 w-3 rounded-full bg-yellow-400"></span>
+                    <span class="animate-ping inline-block h-3 w-3 rounded-full bg-pink-400"></span>
+                    <span class="animate-ping inline-block h-3 w-3 rounded-full bg-blue-400"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="logo-container fade-in">
+        <img src="logo_white.svg" alt="Logo" class="spin-infinite">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
